@@ -1,0 +1,10 @@
+{
+  "testBool": true,
+  "testBool2": false,
+  "testInt": 1337,
+  "testDecimal": 4.20,
+  "testString": "should work",
+  "test:more:complex:keys": "should work too",
+  "test!more!complex!keys": "should also work",
+  "test?more=complex#keys": "should also work o.0 ...windows is weird"
+}

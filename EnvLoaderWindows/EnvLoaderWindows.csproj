@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>yanniclabonte.pfx</AssemblyOriginatorKeyFile>
+        <DelaySign>false</DelaySign>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.21308.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SetUserEnvVars\SetUserEnvVars.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ProgramResources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ProgramResources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="ProgramResources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ProgramResources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+</Project>
