@@ -35,8 +35,10 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.environmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.envSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.envUnsetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.envSetUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.envUnsetUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.envSetSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.envUnsetSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.topMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -87,31 +89,53 @@
             // environmentToolStripMenuItem
             // 
             this.environmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.envSetToolStripMenuItem,
-            this.envUnsetToolStripMenuItem});
+            this.envSetUserToolStripMenuItem,
+            this.envUnsetUserToolStripMenuItem,
+            this.envSetSystemToolStripMenuItem,
+            this.envUnsetSystemToolStripMenuItem});
             this.environmentToolStripMenuItem.Name = "environmentToolStripMenuItem";
             this.environmentToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.environmentToolStripMenuItem.Text = "Environment";
             // 
-            // envSetToolStripMenuItem
+            // envSetUserToolStripMenuItem
             // 
-            this.envSetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("envSetToolStripMenuItem.Image")));
-            this.envSetToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.envSetToolStripMenuItem.Name = "envSetToolStripMenuItem";
-            this.envSetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.envSetToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
-            this.envSetToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.Set;
-            this.envSetToolStripMenuItem.Click += new System.EventHandler(this.setToolStripMenuItem_Click);
+            this.envSetUserToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("envSetToolStripMenuItem.Image")));
+            this.envSetUserToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.envSetUserToolStripMenuItem.Name = "envSetToolStripMenuItem";
+            this.envSetUserToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.envSetUserToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
+            this.envSetUserToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.SetUser;
+            this.envSetUserToolStripMenuItem.Click += new System.EventHandler(this.setUserToolStripMenuItem_Click);
             // 
-            // envUnsetToolStripMenuItem
+            // envUnsetSystemToolStripMenuItem
             // 
-            this.envUnsetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("envUnsetToolStripMenuItem.Image")));
-            this.envUnsetToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.envUnsetToolStripMenuItem.Name = "envUnsetToolStripMenuItem";
-            this.envUnsetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.envUnsetToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
-            this.envUnsetToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.Unset;
-            this.envUnsetToolStripMenuItem.Click += new System.EventHandler(this.unsetToolStripMenuItem_Click);
+            this.envUnsetUserToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("envUnsetToolStripMenuItem.Image")));
+            this.envUnsetUserToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.envUnsetUserToolStripMenuItem.Name = "envUnsetToolStripMenuItem";
+            this.envUnsetUserToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
+            this.envUnsetUserToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
+            this.envUnsetUserToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.UnsetUser;
+            this.envUnsetUserToolStripMenuItem.Click += new System.EventHandler(this.unsetUserToolStripMenuItem_Click);
+            // 
+            // envSetSystemToolStripMenuItem
+            // 
+            this.envSetSystemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("envSetToolStripMenuItem.Image")));
+            this.envSetSystemToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.envSetSystemToolStripMenuItem.Name = "envSetToolStripMenuItem";
+            this.envSetSystemToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.E)));
+            this.envSetSystemToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
+            this.envSetSystemToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.SetSystem;
+            this.envSetSystemToolStripMenuItem.Click += new System.EventHandler(this.setSystemToolStripMenuItem_Click);
+            // 
+            // envUnsetSystemToolStripMenuItem
+            // 
+            this.envUnsetSystemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("envUnsetToolStripMenuItem.Image")));
+            this.envUnsetSystemToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.envUnsetSystemToolStripMenuItem.Name = "envUnsetSystemToolStripMenuItem";
+            this.envUnsetSystemToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.U)));
+            this.envUnsetSystemToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
+            this.envUnsetSystemToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.UnsetSystem;
+            this.envUnsetSystemToolStripMenuItem.Click += new System.EventHandler(this.unsetSystemToolStripMenuItem_Click);
             // 
             // dataGridView
             // 
@@ -149,8 +173,10 @@
         private System.Windows.Forms.MenuStrip topMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem envSetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem envUnsetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem envSetUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem envUnsetUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem envSetSystemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem envUnsetSystemToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.ToolStripMenuItem environmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;

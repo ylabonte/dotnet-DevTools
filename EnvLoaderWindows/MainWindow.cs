@@ -87,7 +87,7 @@ namespace EnvLoaderWindows
             }
         }
 
-        private void setToolStripMenuItem_Click(object sender, EventArgs e)
+        private void setUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView.Rows)
                 if (!string.IsNullOrWhiteSpace((string)row.Cells[0].Value))
@@ -101,7 +101,7 @@ namespace EnvLoaderWindows
                 }
         }
 
-        private void unsetToolStripMenuItem_Click(object sender, EventArgs e)
+        private void unsetUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView.Rows)
                 if (!string.IsNullOrWhiteSpace((string)row.Cells[0].Value))
@@ -109,6 +109,33 @@ namespace EnvLoaderWindows
                     RegistryHelper.UnsetRegistryValue(
                         Registry.CurrentUser,
                         "Environment",
+                        row.Cells[0].Value.ToString()
+                    );
+                }
+        }
+
+        private void setSystemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView.Rows)
+                if (!string.IsNullOrWhiteSpace((string)row.Cells[0].Value))
+                {
+                    RegistryHelper.SetRegistryValue(
+                        Registry.LocalMachine,
+                        @"SYSTEM\CurrentControlSet\Control\Session Manager\Environment",
+                        row.Cells[0].Value.ToString(),
+                        row.Cells[1].Value
+                    );
+                }
+        }
+
+        private void unsetSystemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView.Rows)
+                if (!string.IsNullOrWhiteSpace((string)row.Cells[0].Value))
+                {
+                    RegistryHelper.UnsetRegistryValue(
+                        Registry.LocalMachine,
+                        @"SYSTEM\CurrentControlSet\Control\Session Manager\Environment",
                         row.Cells[0].Value.ToString()
                     );
                 }

@@ -80,7 +80,7 @@ namespace SetUserEnvVars
     public class InvalidRegistryPathException : Exception
     {
         public InvalidRegistryPathException() : base() { }
-        public InvalidRegistryPathException(string? message) : base(message) { }
-        public InvalidRegistryPathException(string? message, Exception? innerException) : base(message, innerException) { }
+        public InvalidRegistryPathException(string message) : base(message) { }
+        public InvalidRegistryPathException(string message, Exception innerException) : base(message, innerException) { }
     }
 }

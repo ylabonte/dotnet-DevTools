@@ -135,11 +135,17 @@
   <data name="Open" xml:space="preserve">
     <value>Öffnen</value>
   </data>
-  <data name="Set" xml:space="preserve">
-    <value>Umgebungsvariablen setzen</value>
+  <data name="SetSystem" xml:space="preserve">
+    <value>System-Umgebungsvariablen setzen</value>
   </data>
-  <data name="Unset" xml:space="preserve">
-    <value>Umgebungsvariablen löschen</value>
+  <data name="SetUser" xml:space="preserve">
+    <value>Benutzer-Umgebungsvariablen setzen</value>
+  </data>
+  <data name="UnsetSystem" xml:space="preserve">
+    <value>System-Umgebungsvariablen löschen</value>
+  </data>
+  <data name="UnsetUser" xml:space="preserve">
+    <value>Benutzer-Umgebungsvariablen löschen</value>
   </data>
   <data name="VariableName" xml:space="preserve">
     <value>Variable</value>

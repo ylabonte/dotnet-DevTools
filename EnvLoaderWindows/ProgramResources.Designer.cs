@@ -115,20 +115,38 @@ namespace EnvLoaderWindows {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set environment variables.
+        ///   Looks up a localized string similar to Set system environment variables.
         /// </summary>
-        internal static string Set {
+        internal static string SetSystem {
             get {
-                return ResourceManager.GetString("Set", resourceCulture);
+                return ResourceManager.GetString("SetSystem", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unset environment variables.
+        ///   Looks up a localized string similar to Set user environment variables.
         /// </summary>
-        internal static string Unset {
+        internal static string SetUser {
             get {
-                return ResourceManager.GetString("Unset", resourceCulture);
+                return ResourceManager.GetString("SetUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unset system environment variables.
+        /// </summary>
+        internal static string UnsetSystem {
+            get {
+                return ResourceManager.GetString("UnsetSystem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unset user environment variables.
+        /// </summary>
+        internal static string UnsetUser {
+            get {
+                return ResourceManager.GetString("UnsetUser", resourceCulture);
             }
         }
         
