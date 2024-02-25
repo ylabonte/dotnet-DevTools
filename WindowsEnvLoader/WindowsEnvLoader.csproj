@@ -2,19 +2,14 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net5.0-windows</TargetFramework>
         <UseWindowsForms>true</UseWindowsForms>
-        <SignAssembly>true</SignAssembly>
-        <AssemblyOriginatorKeyFile>yanniclabonte.pfx</AssemblyOriginatorKeyFile>
-        <DelaySign>false</DelaySign>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.21308.1" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\SetUserEnvVars\SetUserEnvVars.csproj" />
+      <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
     </ItemGroup>
 
     <ItemGroup>

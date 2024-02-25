@@ -147,4 +147,43 @@
   <data name="VariableValue" xml:space="preserve">
     <value>Wert</value>
   </data>
+  <data name="GotNoJson" xml:space="preserve">
+    <value>Kein JSON?</value>
+  </data>
+  <data name="GotEmptyJson" xml:space="preserve">
+    <value>JSON ist leer?</value>
+  </data>
+  <data name="JsonParseError" xml:space="preserve">
+    <value>Fehler beim EInlesen des JSON: {0}</value>
+  </data>
+  <data name="ReadingUserEnvVarsFrom" xml:space="preserve">
+    <value>Benutzer-Umgebungsvariablen werden aus "{0}" werden eingelesen.</value>
+  </data>
+  <data name="SettingUserEnvVar" xml:space="preserve">
+    <value>Umgebungsvariable "{0}" erhält den Wert\n\t"{1}"</value>
+  </data>
+  <data name="QuestionYesNo" xml:space="preserve">
+    <value>?\n [(Y) Ja / (N) Nein] (Vorauswahl=Y)</value>
+  </data>
+  <data name="OpenFileDialogFilter" xml:space="preserve">
+    <value>JSON-Dateien (*.json)|*.json|Alle Dateien (*.*)|*.*</value>
+  </data>
+  <data name="ReadNumVariables" xml:space="preserve">
+    <value>{0} Variablen wurden eingelesen:</value>
+  </data>
+  <data name="DeletingUserEnvVar" xml:space="preserve">
+    <value>Benutzer-Umgebungsvariable "{0}" wird gelöscht</value>
+  </data>
+  <data name="ProgramDescription" xml:space="preserve">
+    <value>Einfaches Tool, um unter Windows Benutzer-Umgebungsvariablen mittels JSON-Datei zu setzen (z.B. Visual Studio User-Secrets).</value>
+  </data>
+  <data name="ProgramArgJsonFile" xml:space="preserve">
+    <value>JSON-Datei mit flacher Key/Value-Struktur (nicht verschachtelt!).</value>
+  </data>
+  <data name="ProgramOptDelete" xml:space="preserve">
+    <value>Die übergebenen Variablen werden gelöscht (die Werte der JSON-Datei spielen keine Rolle).</value>
+  </data>
+  <data name="ProgramOptYes" xml:space="preserve">
+    <value>Nicht Nachfragen. Einträge werden direkt hinzugefügt/gelöscht.</value>
+  </data>
 </root>
