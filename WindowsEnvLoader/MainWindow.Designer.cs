@@ -1,4 +1,4 @@
-﻿namespace EnvLoaderWindows
+﻿namespace WindowsEnvLoader
 {
     partial class MainWindow
     {
@@ -62,7 +62,7 @@
             this.openToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
-            this.fileToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.File;
+            this.fileToolStripMenuItem.Text = global::WindowsEnvLoader.ProgramResources.File;
             // 
             // newToolStripMenuItem
             // 
@@ -71,7 +71,7 @@
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.newToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.newToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.New;
+            this.newToolStripMenuItem.Text = global::WindowsEnvLoader.ProgramResources.New;
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
@@ -81,7 +81,7 @@
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.openToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.Open;
+            this.openToolStripMenuItem.Text = global::WindowsEnvLoader.ProgramResources.Open;
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // environmentToolStripMenuItem
@@ -100,7 +100,7 @@
             this.envSetToolStripMenuItem.Name = "envSetToolStripMenuItem";
             this.envSetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.envSetToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
-            this.envSetToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.Set;
+            this.envSetToolStripMenuItem.Text = global::WindowsEnvLoader.ProgramResources.Set;
             this.envSetToolStripMenuItem.Click += new System.EventHandler(this.setToolStripMenuItem_Click);
             // 
             // envUnsetToolStripMenuItem
@@ -110,7 +110,7 @@
             this.envUnsetToolStripMenuItem.Name = "envUnsetToolStripMenuItem";
             this.envUnsetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
             this.envUnsetToolStripMenuItem.Size = new System.Drawing.Size(331, 26);
-            this.envUnsetToolStripMenuItem.Text = global::EnvLoaderWindows.ProgramResources.Unset;
+            this.envUnsetToolStripMenuItem.Text = global::WindowsEnvLoader.ProgramResources.Unset;
             this.envUnsetToolStripMenuItem.Click += new System.EventHandler(this.unsetToolStripMenuItem_Click);
             // 
             // dataGridView

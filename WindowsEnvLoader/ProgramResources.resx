@@ -147,4 +147,43 @@
   <data name="VariableValue" xml:space="preserve">
     <value>Variable value</value>
   </data>
+  <data name="GotNoJson" xml:space="preserve">
+    <value>Got no JSON to read.</value>
+  </data>
+  <data name="GotEmptyJson" xml:space="preserve">
+    <value>Got empty JSON.</value>
+  </data>
+  <data name="JsonParseError" xml:space="preserve">
+    <value>JSON Parse Error: {0}</value>
+  </data>
+  <data name="ReadingUserEnvVarsFrom" xml:space="preserve">
+    <value>Reading user environment variables from "{0}"</value>
+  </data>
+  <data name="SettingUserEnvVar" xml:space="preserve">
+    <value>Setting user environment variable '{0}'\n\tto: '{1}'</value>
+  </data>
+  <data name="QuestionYesNo" xml:space="preserve">
+    <value>?\n [(Y)es/(N)o] (Default=Y)</value>
+  </data>
+  <data name="OpenFileDialogFilter" xml:space="preserve">
+    <value>JSON files (*.json)|*.json|All files (*.*)|*.*</value>
+  </data>
+  <data name="ReadNumVariables" xml:space="preserve">
+    <value>Read {0} variables:</value>
+  </data>
+  <data name="DeletingUserEnvVar" xml:space="preserve">
+    <value>Deleting user environment variable '{0}'</value>
+  </data>
+  <data name="ProgramDescription" xml:space="preserve">
+    <value>Simple tool for setting user environment variables from a JSON file (eg. a user secrets file from Visual Studio).</value>
+  </data>
+  <data name="ProgramArgJsonFile" xml:space="preserve">
+    <value>A JSON file that represents a simple key/value list without any nesting.</value>
+  </data>
+  <data name="ProgramOptDelete" xml:space="preserve">
+    <value>Remove given environment vars (irrespective of their values).</value>
+  </data>
+  <data name="ProgramOptYes" xml:space="preserve">
+    <value>Yes to all aka. non-interactive mode. Do not ask before adding/deleting operations.</value>
+  </data>
 </root>
