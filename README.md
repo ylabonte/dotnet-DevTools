@@ -1,18 +1,24 @@
-# My personal .NET dev tools
-# <small>dotnet-DevTools</small>
-This project is supposed to be a collection of more or less useful (...or useless) tools that have 
-emerged and will emerge motivated by my everyday work.
+# My Personal .NET Dev Tools
+This project is supposed to be a collection of more or less useful tools that are motivated
+by my daily work.
 
-I don't think these tools benefit anyone but me. If someone sees it differently and misses 
-documentation, please just create an issue.
+Actually there is only one tool since the initialization of the repo... 😂
+Feel free to use or raise any issue, if you encounter any trouble.
 
 ## WindowsEnvLoader
 Simple Tool to open/edit flat JSON files (simple key/value pairs as in Visual Studio's user secrets)
-and save the result as user environment variables.  
-The tool can also be used in console mode. Just type 
+and save the result as user environment variables.
+
+The tool can also be used in console mode:
 ```powershell
-WindowsEnvLoader --help
+WindowsEnvLoader.exe <JSON file> [--delete | -d] [--yes | -y]
 ```
+
+Or for more information:
+```powershell
+WindowsEnvLoader.exe --help
+```
+
 This is a merge of the prior Console App and Windows Desktop App (below).
 
 ## ~~EnvLoaderWindows~~
