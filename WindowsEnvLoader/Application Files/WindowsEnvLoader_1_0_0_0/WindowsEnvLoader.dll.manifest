@@ -77,7 +77,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RUQ2y4YuKu5KzBmAoKWWVTcyHUNkEv3fbvW2aluUVOs=</dsig:DigestValue>
+      <dsig:DigestValue>zctT/DTBgSLCnMteorhensbaqxda92hYr7xNoLUIO6E=</dsig:DigestValue>
     </hash>
   </file>
   <file name="es\System.CommandLine.resources.dll" size="19360">
@@ -185,7 +185,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>XEuv1rAozNOXszuyEPJKxCooiLy+eQUwg8bpPBqElWs=</dsig:DigestValue>
+      <dsig:DigestValue>i3wh0QhNPA50+4H1s2IPqNLdom8IY+0QzyRLq3PSKXY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WindowsEnvLoader.exe" size="142336">
@@ -194,7 +194,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>vX/pNnxAY/ASCnkDkvh0HT8HAOIXakY+X7obggP2+WA=</dsig:DigestValue>
+      <dsig:DigestValue>+sKgFchKFoday1j3GGOGpDAmZBWA19i80wiU5NRdPzQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WindowsEnvLoader.runtimeconfig.json" size="458">
