@@ -5,8 +5,8 @@ param (
     [switch]$OnlyBuild=$false
 )
 
-$appName = "WindowsEnvLoader" # 👈 Replace with your application project name.
-$projDir = "WindowsEnvLoader" # 👈 Replace with your project directory (where .csproj resides).
+$appName = "WindowsEnvLoader"
+$projDir = "WindowsEnvLoader"
 
 Set-StrictMode -version 2.0
 $ErrorActionPreference = "Stop"
@@ -34,7 +34,7 @@ $outDir = "$projDir/$publishDir"
 if (Test-Path $outDir) {
     Remove-Item -Path $outDir -Recurse
 }
-
+git 
 # Publish the application.
 Push-Location $projDir
 try {
