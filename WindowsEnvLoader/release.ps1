@@ -24,7 +24,7 @@ $tag = $(git describe --tags)
 Write-Output "Tag: $tag"
 
 # Parse tag into a three-number version.
-$version = $tag.Split('-')[0].TrimStart('v')
+$version = $tag.Split('-')[1].TrimStart('v')
 $version = "$version.0"
 Write-Output "Version: $version"
 
@@ -34,7 +34,7 @@ $outDir = "$projDir/$publishDir"
 if (Test-Path $outDir) {
     Remove-Item -Path $outDir -Recurse
 }
-git 
+
 # Publish the application.
 Push-Location $projDir
 try {
@@ -78,18 +78,16 @@ try {
     if (Test-Path "$appName") {
         Remove-Item -Path "$appName" -Recurse
     }
-    New-Item -Path "$appName"
 
     # Copy new application files.
     Write-Output "Copying new files..."
-    Copy-Item -Path "../$outDir/Application Files","../$outDir/$appName.application" `
-        -Destination ".\$appName" -Recurse
+    Copy-Item -Path "../$outDir" -Destination ".\$appName" -Recurse
 
     # Stage and commit.
     Write-Output "Staging..."
     git add -A
     Write-Output "Committing..."
-    git commit -m "Update to v$version"
+    git commit -m "Update to WindowsEnvLoader v$version"
 
     # Push.
     git push

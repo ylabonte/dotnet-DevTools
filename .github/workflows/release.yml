@@ -3,7 +3,7 @@ name: Release
 
 on:
   push:
-    tags: [v*]
+    tags: [WindowsEnvLoader-v*]
 
 jobs:
   release:
@@ -19,6 +19,12 @@ jobs:
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com          
 
-      - name: Run release script
+      - name: Build and publish via Github Pages
         shell: pwsh
-        run: ./release.ps1
+        run: ./WindowsEnvLoader/release.ps1
+
+      - name: Add Setup.exe to Release Assets
+        uses: softprops/action-gh-release@v1
+        with:
+          files: WindowsEnvLoader/bin/publish/setup.exe
+            
